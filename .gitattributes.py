@@ -262,3 +262,26 @@ elif language == "french":
     print("Salut")
 else:
     print("Привет")
+# Конструкция if в свою очередь сама может иметь вложенные конструкции if:
+daytime == "morning"
+if language == "english":
+    print("English")
+    if daytime == "morning":
+        print("Good morning")
+    else:
+        print("Good evening")
+# Стоит учитывать, что вложенные выражения if также должны начинаться с отступов, а инструкции во вложенных конструкциях также должны иметь отступы. 
+# Отступы, расставленные не должным образом, могут изменить логику программы.
+# Подобным образом можно размещать вложенные конструкции if/elif/else в блоках elif и else:
+language = "russian"
+daytime = "morning"
+if language == "english":
+    if daytime == "morning":
+        print("Good morning")
+    else:
+        print("Good evening")
+else:
+    if daytime == "morning":
+        print("Доброе утро")
+    else:
+        print("Добрый вечер") 
