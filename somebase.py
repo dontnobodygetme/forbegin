@@ -314,7 +314,7 @@ facts = [1, 1, 234, 14124, [1, 14, 12341]]
 # вывести последний элемент списка
 print(facts[-1])
 # элемент из списка в списке
-print(factsp[-1][1])
+print(facts[-1][1])
 # добавить элемент в конец списка
 numsat = [1,2,2131,31,]
 numsat.append(5)
@@ -367,3 +367,28 @@ print(blank.islower)
 print(blank.capitalize())
 # найти элемент (выводит индекс)работает только если такой элемент один, но может работать если задан не один символ
 print(blank.find("i"))
+# разбить список
+games = "Dota 2, CS:GO, Warzone"
+print(games.split(","))
+# вывести список использую capitalize
+games = "dota2, csgo, warzone"
+boom = games.split(", ")
+for el in range(len(boom)):
+    boom[el] = boom[el].capitalize()
+print(boom)
+# тоже самое без задания в список
+games = "dota2, csgo, warzone"
+boom = games.split(", ")
+for el in range(len(boom)):
+    boom[el] = boom[el].capitalize()
+res = ", ".join(boom)
+print = res
+# вывести несколько элементов из списка(по индексам)((Срезы))можно использовать отрицательные индексы
+blank = "Machine"
+print(blank[0:5])
+# вывести до конца
+blank = "Machine"
+print(blank[0:])
+# вывести с начала
+blank = "Machine"
+print(blank[:6])
