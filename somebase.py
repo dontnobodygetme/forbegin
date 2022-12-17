@@ -396,3 +396,6 @@ print(blank[:6])
 blank = "Machine"
 print(blank[0:7:2])
 # шаг(-1)перевернет список как reverse
+# открыть папку
+file = open('text7.txt')
+# все типы открытия файлов здесь https://github.com/dontnobodygetme/openfiles
