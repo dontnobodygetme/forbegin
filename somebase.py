@@ -412,3 +412,6 @@ file.write("Hello world")
 file = open('data/text7.txt', 'w')
 file.write("Hello world")
 file.close()
+# открыть файл для чтения и вывести содержимое
+file = open('data/text7.txt', 'r')
+print(file.read()) # print(file.read(здесь можно указать кол-во символов, которое хотите вывести))
