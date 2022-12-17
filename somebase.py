@@ -392,3 +392,7 @@ print(blank[0:])
 # вывести с начала
 blank = "Machine"
 print(blank[:6])
+# задать шаг
+blank = "Machine"
+print(blank[0:7:2])
+# шаг(-1)перевернет список как reverse
