@@ -327,7 +327,7 @@ numsat.extend([2,4,4,21,1,2])
 # для удобства
 a=[1,14,1,41,5,515,1]
 numsat.extend(a)
-# отсортировать список(True будет равен как бы 1(False будет равен 0))
+# отсортировать список(True будет равен как бы 1(False будет равен 0))(в случае слов сортировка по алфавиту)
 numsat = [1,2,2131,31,]
 numsat.sort()
 # перевернуть список
@@ -335,6 +335,8 @@ numsat.reverse()
 # удалить последний элемент или удалить элемент по индексу(в скобках задать)((отрицательные индексы также работают
 # ))
 numsat.pop() # можно прописать несколько раз
+# Добавить элемент по индексу
+numsat.insert(0,"Cake")
 # удалить элемент из списка(в скобках задать сам элемент)
 numsat.remove(1)
 # полностью очистить список
@@ -423,3 +425,9 @@ print(name.isalpha())
 #
 print(name.replace("o", "b"))
 print(name*3)
+# slice
+website = "https://www.google.com/"
+website2 = "https://www.wikipedia.org/"
+slice = slice(12,-5)
+print(website[slice])
+print(website2[slice])
