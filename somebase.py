@@ -431,3 +431,47 @@ website2 = "https://www.wikipedia.org/"
 slice = slice(12,-5)
 print(website[slice])
 print(website2[slice])
+#region бла бла бла( теперь длинный текст буду в регион заключать) это tuple
+# Кортежи (tuple) в Python – это те же списки за одним исключением.
+#  Кортежи неизменяемые структуры данных.
+#  Так же как списки они могут состоять из элементов разных типов, перечисленных через запятую.
+#  Кортежи заключаются в круглые, а не квадратные скобки.
+# endregion
+teacher =("Jane", 21 , "female")
+ print(teacher.count("female")) # подсчет таких переменных
+print(teacher.index("Jane")) # инфа об индексе переменной
+# region set
+# Множество (класс set) - это контейнер, который содержит уникальные не повторяющиеся элементы в случайном порядке (неупорядоченная коллекция).
+# неупорядоченная это значит, что два множества эквивалентны, если содержат одинаковые элементы.
+# При добавлении одинаковых элементов, команда print выведет этот элемент как один из элементов
+# endregion
+names = {"james","ben","frenk"}
+genders = {"male","female","other"}names.add("alex") # добавить в сет
+names.remove("james") # удалить из сета
+names.clear() # очистить сет
+names.update(genders) # добавить в сет другой(сет)
+user_data = names.union(genders) # одна переменная, которая включает names и genders
+print(names.difference(genders)) # вывести те значения, что есть у names, но нет у genders
+print(genders.intersection(names)) # вывести значение, которые есть у names и genders
+for i in user_data:
+    print(i)
+user_data = names.union(genders)
+# region dictionary
+# Словарь (dictionary) в языке Python хранит коллекцию элементов, где каждый элемент имеет уникальный ключ и ассоциированое с ним некоторое значение.
+# Определение словаря имеет следующий синтаксис: ? dictionary = { ключ 1 :значение 1 , ключ 2 :значение 2 , ....}
+# endregion
+capitals = {'USA':'Washington DC' ,
+'India':'New Dehlu' ,
+'China':'Beijing' ,
+'Russia':'Moscow'}
+print(capitals['Russia'])
+print(capitals.get('Germany')) # узнать есть ли такая переменная( если есть выводит значение)
+print(capitals.keys()) # вывести ключи(см. описание)
+print(capitals.values()) # вывести значения
+print(capitals.items()) # вывести ключи и значения
+capitals.update({'Germany':'Berlin'}) # добавить в словарь
+capitals.update({'USA':'Las Vegas'}) # также можно заменить уже существующий ключ с помощью этой команды
+capitals.pop('China') # удалить ключ
+capitals.clear() # удалит словарь
+for key,value in capitals.items():
+    print(key,value)
