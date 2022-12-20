@@ -475,3 +475,8 @@ capitals.pop('China') # удалить ключ
 capitals.clear() # удалит словарь
 for key,value in capitals.items():
     print(key,value)
+# index operator
+name = "alex Py"
+if(name[0].islower()):
+    name = name.capitalize()
+    print(name)
