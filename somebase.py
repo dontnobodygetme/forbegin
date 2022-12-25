@@ -480,3 +480,8 @@ name = "alex Py"
 if(name[0].islower()):
     name = name.capitalize()
     print(name)
+# скрыть инфу при вводе данных
+from getpass import getpass
+user = input("Username: ")
+password = getpass("Password: ")
+print(user, password)
